@@ -4,12 +4,12 @@ import React from "react";
 
 export const MyCoolButton = props => {
 
-    const clickHandler = () =>alert(`Өнөөдөр: ${new Date()}`);
+    const clickHandler = () =>alert(`Коммент : ` + props.comment);
   
     return (
       <div>
           <span>{props.tovchNer ? props.tovchNer: 'Үнэхээр лаг товч'}</span><br/>
-          <span>{`Өнөөдөр: ${new Date()}`}</span><br/>
+          
           <input 
               className="MyCoolButton" 
               type="button"
